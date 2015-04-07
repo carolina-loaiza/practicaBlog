@@ -3,10 +3,8 @@
 //
 
 .header-content {
-  height: 450px;
-}
-
-.main-nav ul, .header-content {
+  height: 300px;
+  @extend %content;
   @extend %container;
 }
 
@@ -16,8 +14,8 @@
 }
 
 footer {
-  padding: 150px 0 60px 0;
-  background-color: $background1;
+  padding: 0 20px;
+  background-color: $second-color;
   .footer-nav {
     @extend %container;
   }

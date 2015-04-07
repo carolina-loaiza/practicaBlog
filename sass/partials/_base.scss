@@ -13,22 +13,28 @@ html {
 
 body {
   margin: 0;
+  color : #000;
+  font-family: $sans;
 }
 
 ul, ol {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+}
+
 p, li {
-  font-family: $serif;
-  margin-bottom: 0.3em;
-  @include font-size(14);
-  color: $texto1;
+  @include font-size(20);
 }
 
 a {
-  color: $texto2;
+  @include font-size(20);
   text-decoration: none;
+  color: #fff;
   &:hover {
     text-decoration: underline;
   }
@@ -36,8 +42,6 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-family: $sans;
-  color: $texto1;
 }
 
 // Patrones

@@ -1,0 +1,14 @@
+//
+// Estilos de la seccion Articulo
+//
+
+.main-contein {
+	width: 960px;
+	@extend %content;
+}
+
+.article-contein {
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+}

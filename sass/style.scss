@@ -1,5 +1,6 @@
 //
-// Estilos Blog
+// Estilos para el sitio del Drupal Camp CR
+//
 
 //
 // Parciales
@@ -13,6 +14,5 @@
 @import "partials/layout";
 
 // Módulos
+@import "partials/modules/navigation";
 @import "partials/modules/header";
-@import "partials/modules/article";
-@import "partials/modules/side-bar";

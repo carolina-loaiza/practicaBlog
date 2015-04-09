@@ -3,34 +3,51 @@
 //
 
 header {
-  background-color: $destacado1;
+  background-color: $main-color;
 }
 
 .header-content {
-  background: url(../img/banner-head.jpg) no-repeat;
-  text-align: center;
-  color: #fff;
-  h1, h2, h3 {
-    color: #fff;
+  text-align: left;
+}
+
+//
+// Estilos para la navegación
+//
+
+nav {
+  ul {
+    padding: 0;
   }
-  h2 {
-    @include font-size(18);
-    &:before, &:after {
-      content: "\2022";
-      margin: 0 0.6em;
-    }
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
   }
-  h3 {
-    color: #000;
-    text-transform: uppercase;
-    @include font-size(16);
-    margin: 20px 0;
+}
+
+// Navegación principal
+
+.main-nav {
+  a {
+    color: $text-nav;
+    display: block;
+    height: 100px;
+    padding: 0 30px;
+    font-family: $sans;
+    @include font-size(20);
   }
-  h3 + h3 {
-    color: #fff;
-    text-transform: none;
+}
+
+// Navegación footer
+.footer-nav {
+  li {
+    padding: 0 5px;
   }
-  .button {
-    @include button(14, $transform: uppercase);
+  a {
+    display: block;
+    border-bottom: 1px #fff solid;
+    color: $text-footer;
+    padding: 5px;
+    font-family: $sans;
   }
 }

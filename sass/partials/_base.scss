@@ -13,21 +13,21 @@ html {
 
 body {
   margin: 0;
+  font-family: $sans;
+  color: #000;
 }
 
 ul, ol {
   margin: 0;
 }
 
-p, li {
-  font-family: $serif;
-  margin-bottom: 0.3em;
+li {
+  list-style: none;
+  display: inline-block;
   @include font-size(14);
-  color: $texto1;
 }
 
 a {
-  color: $texto2;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -36,17 +36,4 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-family: $sans;
-  color: $texto1;
-}
-
-// Patrones
-
-.section-header {
-  width: 100%;
-  border-bottom: 1px solid #000;
-  color: #000;
-  text-transform: uppercase;
-  padding-bottom: 0.5em;
-  margin-bottom: 40px;
 }

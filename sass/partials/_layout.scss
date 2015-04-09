@@ -3,21 +3,22 @@
 //
 
 .header-content {
-  height: 450px;
-}
-
-.main-nav ul, .header-content {
-  @extend %container;
-}
-
-.l-acerca, .l-patrocinadores, .l-registro {
+  height: 250px;
   @extend %content;
-  padding: 100px 0;
+}
+
+.main-contein {
+	@extend %content;
+	.article-contein {
+		width: 620px;
+		float: left;
+		padding: 0 20px; 
+	}
 }
 
 footer {
   padding: 150px 0 60px 0;
-  background-color: $background1;
+  background-color: $secondary-color;
   .footer-nav {
     @extend %container;
   }

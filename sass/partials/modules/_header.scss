@@ -4,24 +4,29 @@
 
 header {
   background-color: $main-color;
+  color: $text-nav;
 }
 
 .header-content {
   text-align: left;
+  h1 {
+    padding: 20px 0 10px 0;
+    @include font-size(42);
+    text-transform: uppercase;
+  }
 }
+
 
 //
 // Estilos para la navegación
 //
 
 nav {
-  ul {
-    padding: 0;
-  }
   li {
     list-style-type: none;
     display: inline-block;
     margin: 0;
+    @include font-size(20);
   }
 }
 
@@ -31,9 +36,19 @@ nav {
   a {
     color: $text-nav;
     display: block;
-    height: 100px;
-    padding: 0 30px;
+    margin-right: 10px;
+    padding: 5px;
     font-family: $sans;
+    &:hover {
+      @include hover-nav($main-color)
+    }
+  }
+}
+
+.social-net {
+  float: right;
+  margin-top: 55px;
+  & li:first-child  {
     @include font-size(20);
   }
 }
@@ -41,13 +56,19 @@ nav {
 // Navegación footer
 .footer-nav {
   li {
-    padding: 0 5px;
+    color: $text-footer;
   }
   a {
-    display: block;
-    border-bottom: 1px #fff solid;
-    color: $text-footer;
+    margin-right: 10px;
     padding: 5px;
+    display: block;
+    color: $text-footer;
     font-family: $sans;
+    &:hover {
+      @include hover-nav($secondary-color)
+    }
+  }
+  .social-net-footer {
+    margin-left: 40px;
   }
 }

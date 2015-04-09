@@ -1,9 +1,4 @@
-footer .footer-nav {
-  max-width: 1400px;
-  margin: 0 auto;
-  overflow: hidden; }
-
-.header-content, .main-contein {
+.header-content, .main-contein, footer ul {
   max-width: 960px;
   margin: 0 auto; }
 
@@ -20,7 +15,8 @@ body {
   color: #000; }
 
 ul, ol {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 li {
   list-style: none;
@@ -34,49 +30,71 @@ a {
     text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0; }
+  margin: 0; }
 
 .header-content {
   height: 250px; }
 
 .main-contein .article-contein {
-  width: 620px;
+  background-color: #fff;
+  margin-top: -115px;
+  width: 640px;
   float: left;
-  padding: 0 20px; }
+  padding: 30px; }
 
 footer {
-  padding: 150px 0 60px 0;
+  clear: both;
+  padding: 30px 0;
   background-color: #cdcdcd; }
 
 header {
-  background-color: #00a0aa; }
+  background-color: #00a0aa;
+  color: #ffffff; }
 
 .header-content {
   text-align: left; }
+  .header-content h1 {
+    padding: 20px 0 10px 0;
+    font-size: 42px;
+    font-size: 4.2rem;
+    text-transform: uppercase; }
 
-nav ul {
-  padding: 0; }
 nav li {
   list-style-type: none;
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+  font-size: 20px;
+  font-size: 2rem; }
 
 .main-nav a {
   color: #ffffff;
   display: block;
-  height: 100px;
-  padding: 0 30px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-size: 2rem; }
-
-.footer-nav li {
-  padding: 0 5px; }
-.footer-nav a {
-  display: block;
-  border-bottom: 1px #fff solid;
-  color: #5b5b5b;
+  margin-right: 10px;
   padding: 5px;
   font-family: Helvetica, Arial, sans-serif; }
+  .main-nav a:hover {
+    text-decoration: none;
+    background-color: #00bdc9; }
+
+.social-net {
+  float: right;
+  margin-top: 55px; }
+  .social-net li:first-child {
+    font-size: 20px;
+    font-size: 2rem; }
+
+.footer-nav li {
+  color: #5b5b5b; }
+.footer-nav a {
+  margin-right: 10px;
+  padding: 5px;
+  display: block;
+  color: #5b5b5b;
+  font-family: Helvetica, Arial, sans-serif; }
+  .footer-nav a:hover {
+    text-decoration: none;
+    background-color: gainsboro; }
+.footer-nav .social-net-footer {
+  margin-left: 40px; }
 
 /*# sourceMappingURL=style.css.map */

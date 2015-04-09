@@ -18,3 +18,9 @@
   background-color: $background-color;
   color: $text-color;
 }
+
+// nav:hover mixin
+@mixin hover-nav($color, $amount: 6%) {
+  text-decoration: none;
+  background-color: lighten($color, $amount);
+}

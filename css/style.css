@@ -1,4 +1,4 @@
-.header-content, .main-contein, footer ul {
+footer ul, .header-content, .main-contein {
   max-width: 960px;
   margin: 0 auto; }
 
@@ -9,41 +9,58 @@ html {
 * {
   box-sizing: inherit; }
 
+a {
+  text-decoration: none; }
+
 body {
-  margin: 0;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
-  color: #000; }
+  margin: 0; }
+
+footer .social-net-facebook, footer .social-net-twitter {
+  background-color: #e7e7e7; }
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0; }
+
+li {
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 ul, ol {
   margin: 0;
   padding: 0; }
 
-li {
-  list-style: none;
-  display: inline-block;
-  font-size: 14px;
-  font-size: 1.4rem; }
+.social-net-facebook, .social-net-twitter {
+  border-radius: 20px;
+  display: block;
+  height: 40px;
+  margin-bottom: -12px;
+  margin-left: 12px;
+  width: 40px; }
 
-a {
-  text-decoration: none; }
+.social-net-facebook {
+  background: url(../img/facebook.png) no-repeat; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+.social-net-twitter {
+  background: url(../img/twitter.png) no-repeat; }
+
+footer {
+  background-color: #cdcdcd;
+  clear: both;
+  padding: 30px 0; }
+
+.article-contein {
+  background-color: #fff;
+  float: left;
+  margin-top: -115px;
+  padding: 30px 30px 50px 30px;
+  width: 640px; }
 
 .header-content {
   height: 250px; }
-
-.main-contein .article-contein {
-  background-color: #fff;
-  margin-top: -115px;
-  width: 640px;
-  float: left;
-  padding: 30px 30px 50px 30px; }
-
-footer {
-  clear: both;
-  padding: 30px 0;
-  background-color: #cdcdcd; }
 
 header {
   background-color: #00a0aa;
@@ -58,8 +75,8 @@ header {
     text-transform: uppercase; }
 
 nav li {
-  list-style-type: none;
   display: inline-block;
+  list-style-type: none;
   margin: 0;
   font-size: 20px;
   font-size: 2rem; }
@@ -67,9 +84,9 @@ nav li {
 .main-nav a {
   color: #ffffff;
   display: block;
+  font-family: Helvetica, Arial, sans-serif;
   margin-right: 10px;
-  padding: 5px;
-  font-family: Helvetica, Arial, sans-serif; }
+  padding: 5px; }
   .main-nav a:hover {
     text-decoration: none;
     background-color: #00bdc9; }
@@ -84,23 +101,22 @@ nav li {
 .footer-nav li {
   color: #5b5b5b; }
 .footer-nav a {
-  margin-right: 10px;
-  padding: 5px;
-  display: block;
   color: #5b5b5b;
-  font-family: Helvetica, Arial, sans-serif; }
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-right: 10px;
+  padding: 5px; }
   .footer-nav a:hover {
     text-decoration: none;
     background-color: gainsboro; }
 
 .social-net-footer {
-  margin-left: 40px; }
+  margin-left: 190px; }
 
 .article-contein p, .article-contein a {
   font-size: 16px;
   font-size: 1.6rem;
-  padding-bottom: 10px;
-  margin: 0; }
+  padding-bottom: 10px; }
 .article-contein h2 {
   font-size: 20px;
   font-size: 2rem;
@@ -113,8 +129,8 @@ nav li {
 .link-read-more {
   color: #00a0aa;
   display: block;
-  padding-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-bottom: 20px; }
   .link-read-more:after {
     content: ">";
     font-size: 12px;
@@ -122,11 +138,11 @@ nav li {
     margin-left: 5px; }
 
 .img-example {
-  width: 240px;
-  height: 200px;
   background-color: #cdcdcd;
   float: left;
-  margin-right: 15px; }
+  height: 200px;
+  margin-right: 15px;
+  width: 240px; }
 
 .link-see-more {
   display: block;
@@ -148,15 +164,14 @@ nav li {
   padding-top: 10px; }
 
 .side-bar {
-  margin: 50px 10px;
   float: right;
+  margin: 50px 10px;
   width: 300px;
   font-size: 14px;
   font-size: 1.4rem; }
   .side-bar p {
     font-weight: bold;
     padding: 10px 0;
-    margin: 0;
     border-bottom: 2px solid #cdcdcd; }
   .side-bar label {
     display: block;
@@ -166,10 +181,10 @@ nav li {
   .side-bar input[type=email], .side-bar input[type=submit] {
     font-size: 12px;
     font-size: 1.2rem;
-    padding: 10px 14px;
-    text-transform: uppercase;
     border: none;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    padding: 10px 14px;
+    text-transform: uppercase; }
   .side-bar input[type=email] {
     background-color: #cdcdcd; }
     .side-bar input[type=email]::-webkit-input-placeholder {
@@ -189,15 +204,18 @@ nav li {
   color: #00a0aa; }
 
 .link-out-page {
-  display: block;
-  color: #fe7300; }
+  color: #fe7300;
+  display: block; }
 
 .publicidad {
+  font-size: 12px;
+  font-size: 1.2rem;
   margin: 40px auto;
   width: 200px; }
   .publicidad img {
-    width: 200px;
+    background-color: #cdcdcd;
     height: 200px;
-    background-color: #cdcdcd; }
+    margin-top: 10px;
+    width: 200px; }
 
 /*# sourceMappingURL=style.css.map */

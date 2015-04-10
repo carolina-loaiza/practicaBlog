@@ -23,8 +23,8 @@ header {
 
 nav {
   li {
-    list-style-type: none;
     display: inline-block;
+    list-style-type: none;
     margin: 0;
     @include font-size(20);
   }
@@ -36,9 +36,9 @@ nav {
   a {
     color: $text-nav;
     display: block;
+    font-family: $sans;
     margin-right: 10px;
     padding: 5px;
-    font-family: $sans;
     &:hover {
       @include hover-nav($main-color)
     }
@@ -62,11 +62,11 @@ nav {
     color: $text-footer;
   }
   a {
+    color: $text-footer;
+    display: block;
+    font-family: $sans;
     margin-right: 10px;
     padding: 5px;
-    display: block;
-    color: $text-footer;
-    font-family: $sans;
     &:hover {
       @include hover-nav($secondary-color)
     }
@@ -74,5 +74,5 @@ nav {
 }
 
 .social-net-footer {
-  margin-left: 40px;
+  margin-left: 190px;
 }

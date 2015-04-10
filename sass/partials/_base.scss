@@ -11,10 +11,30 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  margin: 0;
-  font-family: $sans;
   color: #000;
+  font-family: $sans;
+  margin: 0;
+}
+
+footer {
+  .social-net-facebook, .social-net-twitter { 
+    background-color: lighten($secondary-color, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  @include font-size(14);
 }
 
 ul, ol {
@@ -22,16 +42,20 @@ ul, ol {
   padding: 0;
 }
 
-li {
-  list-style: none;
-  display: inline-block;
-  @include font-size(14);
+.social-net-facebook, .social-net-twitter {
+  border-radius: 20px;
+  display: block;
+  height: 40px;
+  margin-bottom: -12px;
+  margin-left: 12px;
+  width: 40px;
 }
 
-a {
-  text-decoration: none;
+.social-net-facebook {
+  background: url(../img/facebook.png) no-repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+.social-net-twitter {
+  background: url(../img/twitter.png) no-repeat;
 }
+

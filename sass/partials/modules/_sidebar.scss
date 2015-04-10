@@ -3,15 +3,14 @@
 //
 
 .side-bar {
-	margin: 50px 10px;
 	float: right;
+	margin: 50px 10px;
 	width: 300px;
 	@include font-size(14);
 
 	p {
 		font-weight: bold;
 		padding: 10px 0;
-		margin: 0;
 		@include borde-bottom(2px, $secondary-color);
 	}
 
@@ -23,10 +22,10 @@
 
 	input[type=email], input[type=submit] {
 		@include font-size(12);
-		padding: 10px 14px;
-		text-transform: uppercase;
 		border: none;
 		margin-bottom: 25px;
+		padding: 10px 14px;
+		text-transform: uppercase;
 	}
 
 	input[type=email] {
@@ -48,16 +47,18 @@
 }
 
 .link-out-page {
-	display: block;
 	color: $link-out-page;
+	display: block;
 }
 
 .publicidad {
+	@include font-size(12);
 	margin: 40px auto;
 	width: 200px;
 	img {
-		width: 200px;
-		height: 200px;
 		background-color: $secondary-color;
+		height: 200px;
+		margin-top: 10px;
+		width: 200px;
 	}
 }

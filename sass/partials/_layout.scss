@@ -2,6 +2,24 @@
 // Layout styles
 //
 
+
+footer {
+  background-color: $secondary-color;
+  clear: both;
+  padding: 30px 0;
+  ul {
+    @extend %content;
+  }
+}
+
+.article-contein {
+  background-color: #fff;
+  float: left;
+  margin-top: -115px;
+  padding: 30px 30px 50px 30px;
+  width: 640px;
+}
+
 .header-content {
   height: 250px;
   @extend %content;
@@ -9,21 +27,5 @@
 
 .main-contein {
 	@extend %content;
-	.article-contein {
-    background-color: #fff;
-    margin-top: -115px;
-		width: 640px;
-		float: left;
-		padding: 30px 30px 50px 30px;
-	}
 }
 
-footer {
-  clear: both;
-  padding: 30px 0;
-  background-color: $secondary-color;
-  ul {
-     @extend %content;
-  }
- 
-}

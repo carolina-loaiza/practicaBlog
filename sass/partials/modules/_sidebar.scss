@@ -1,3 +1,63 @@
 //
 // Estilos para el sidebar
 //
+
+.side-bar {
+	margin: 50px 10px;
+	float: right;
+	width: 300px;
+	@include font-size(14);
+
+	p {
+		font-weight: bold;
+		padding: 10px 0;
+		margin: 0;
+		@include borde-bottom(2px, $secondary-color);
+	}
+
+	label {
+		display: block;
+		@include font-size(12);
+		margin: 15px 0;
+	}
+
+	input[type=email], input[type=submit] {
+		@include font-size(12);
+		padding: 10px 14px;
+		text-transform: uppercase;
+		border: none;
+		margin-bottom: 25px;
+	}
+
+	input[type=email] {
+		background-color: $secondary-color;
+		@include placeholder {
+	    color: darken($secondary-color, 30%);
+		}
+	}
+
+	input[type=submit] {
+		background-color: $form-button;
+	  color: #fff;
+	}
+}
+
+.title-section {
+	@include borde-bottom(2px, $main-color);
+	color: $main-color;
+}
+
+.link-out-page {
+	display: block;
+	color: $link-out-page;
+}
+
+.publicidad {
+	margin: 40px auto;
+	width: 200px;
+	img {
+		width: 200px;
+		height: 200px;
+		background-color: $secondary-color;
+	}
+}

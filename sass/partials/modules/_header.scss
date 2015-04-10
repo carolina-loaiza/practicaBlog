@@ -53,7 +53,10 @@ nav {
   }
 }
 
+
 // Navegación footer
+
+
 .footer-nav {
   li {
     color: $text-footer;
@@ -68,7 +71,8 @@ nav {
       @include hover-nav($secondary-color)
     }
   }
-  .social-net-footer {
-    margin-left: 40px;
-  }
+}
+
+.social-net-footer {
+  margin-left: 40px;
 }

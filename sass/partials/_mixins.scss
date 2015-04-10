@@ -10,7 +10,7 @@
 
 // Botón
 @mixin button($font-size, $border-radius, $background-color, $text-color: #fff) {
-  display: inline-block;
+  display: block;
   @include font-size($font-size);
   padding: 0.5em 2em;
   border: none;
@@ -23,4 +23,17 @@
 @mixin hover-nav($color, $amount: 6%) {
   text-decoration: none;
   background-color: lighten($color, $amount);
+}
+
+// Borde bottom style
+@mixin borde-bottom($border-width, $color) {
+  border-bottom: $border-width solid $color;
+}
+
+// Placeholder Color
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
 }

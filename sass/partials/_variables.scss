@@ -2,8 +2,11 @@
 // Variables
 //
 
+// @import Tipografía Roboto
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400);
+
 // Tipografía
-$sans: Helvetica, Arial, sans-serif;
+$sans: 'Roboto', Helvetica, Arial, sans-serif;
 
 // Colores
 $form-button: #2aa9e0; //Celeste

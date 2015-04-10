@@ -4,7 +4,8 @@
 
 
 .article-contein {
-	p, a {
+	p {
+		font-weight: lighter;
 		@include font-size(16);
 		padding-bottom: 10px;
 	}
@@ -28,6 +29,7 @@
 	display: block;
 	font-weight: bold;
 	padding-bottom: 20px;
+	@include font-size(16);
 	&:after {
 		content: ">" ;
 		@include font-size(12);
@@ -38,7 +40,7 @@
 .img-example {
 	background-color: $secondary-color;
 	float: left;
-	height: 200px;
+	height: 210px;
 	margin-right: 15px;
 	width: 240px;
 }

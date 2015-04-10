@@ -30,6 +30,7 @@
 
 	input[type=email] {
 		background-color: $secondary-color;
+		width: 63%;
 		@include placeholder {
 	    color: darken($secondary-color, 30%);
 		}
@@ -38,6 +39,7 @@
 	input[type=submit] {
 		background-color: $form-button;
 	  color: #fff;
+	  float: right;
 	}
 }
 
